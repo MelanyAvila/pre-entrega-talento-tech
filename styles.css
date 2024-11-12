@@ -1,0 +1,196 @@
+/* generales */
+body {
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+
+h1 {
+    font-family: 'Caveat Brush', cursive;
+    font-weight: 400;
+    font-size: 300%;
+}
+
+* {
+    font-family: 'Patrick Hand', cursive;
+    font-weight: 450;
+}
+
+hr {
+    border: none;
+    height: 1px;
+    background-color: #b5b88c;
+}
+
+h2 {
+    font-family: 'Caveat Brush', cursive;
+    font-weight: 300;
+    font-size: 250%;
+    margin-top: -1px;
+    color: #f09186;
+    text-align: center;
+}
+
+p {
+    text-align: center;
+}
+
+/* Barra de navegación */
+header {
+    background-color: #ffffff;
+    padding: 3% 3% 0 3%;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 3%;
+}
+
+nav ul li {
+    margin: 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #b5b88c;
+}
+
+/* Secciones */
+section {
+    margin-bottom: 2%;
+    padding: 5%;
+}
+
+/* Productos */
+.productos-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2%;
+    justify-content: space-between;
+}
+
+.producto-card {
+    margin: 1%;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 2%;
+    text-align: center;
+    flex: 1 1 calc(33% - 2%);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-decoration: none; 
+    color: black; 
+}
+
+.producto-card:hover, 
+.producto-card:link, 
+.producto-card:visited, 
+.producto-card:active {
+    color: black; 
+    text-decoration: none; 
+}
+
+.producto-card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+}
+
+.ver-mas-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 2%;
+}
+
+.ver-mas-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #b5b88c;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.ver-mas-btn:hover {
+    background-color: #9fa179;
+}
+
+/* Contacto */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 2%;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: rgba(252, 248, 249, 0.50);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+input, textarea, button {
+    padding: 3%;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    background-color: #b5b88c;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #9fa179;
+}
+
+/* Pie de página */
+footer { 
+    color: #f09186;
+    text-align: center;
+    padding: 1%;
+    position: relative;
+    width: 100%;
+}
+
+/* Media para diseño responsive */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+    }
+
+    .producto-card {
+        flex: 1 1 100%;
+    }
+
+    form {
+        padding: 2%;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        padding: 2%;
+    }
+
+    nav ul {
+        gap: 5%;
+    }
+
+    section {
+        padding: 2%;
+    }
+
+    form {
+        padding: 2%;
+    }
+
+    .productos-container {
+        gap: 5%;
+    }
+}

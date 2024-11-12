@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/512/5887/5887821.png" type="image/x-icon">
+        <link rel="stylesheet" href="styles.css">
+        <link href="https://fonts.googleapis.com/css2?family=Caveat+Brush&family=Kalam:wght@300;400;700&family=Patrick+Hand&display=swap" rel="stylesheet">
+        <title>Pastelería Sweet like Cinnamon</title>
+    </head>
+    <body>
+        <header>
+            <hr>
+            <h1>Sweet like Cinnamon</h1>
+            <nav>
+                <ul>
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#productos">Productos</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </nav>
+            <hr>
+        </header>
+
+        <main>
+            <!-- Sección de inicio -->
+            <section id="inicio">
+                <h2>¡Bienvenidos!</h2>
+                <p>
+                    En esta pastelería, nuestra misión es endulzar la vida de nuestros clientes con productos de alta calidad y sabor excepcional.
+                    Nos esforzamos por crear momentos inolvidables a través de nuestros deliciosos postres, elaborados con ingredientes 
+                    frescos y seleccionados cuidadosamente.
+                    <br><br>
+                    Queremos ser la pastelería preferida por todos aquellos que buscan deleitarse con un dulce exquisito. 
+                    Aspiramos a innovar constantemente en nuestras recetas y presentaciones, manteniendo la tradición
+                    artesanal que nos caracteriza, y ser reconocidos por nuestra pasión y dedicación en cada creación.
+                    <br><br>
+                    Ofrecemos una amplia variedad de productos que incluyen tortas, galletas, cupcakes y más!.
+                    <br>
+                    Ven y visita nuestra pastelería, donde cada visita es una experiencia deliciosa y cada producto es una obra de amor. 💕
+                </p>
+            </section>
+
+            <!-- Sección de productos -->
+            <section id="productos">
+                <h2><hr>Productos<hr></h2>
+                <div class="productos-container">
+                    <!-- Cards de productos -->
+                    <a href="https://example.com" class="producto-card">
+                        <img src="imagenes/cheesecake.jpg" alt="cheesecake">
+                        <h3>Cheesecake estilo Nueva York</h3>
+                        <p>
+                            Cremoso cheesecake con una base crujiente y una cubierta de frutos rojos frescos. <br><br>
+                            <b>$20.000</b>
+                        </p>
+                    </a>
+                    <a href="https://example.com" class="producto-card">
+                        <img src="imagenes/pepas.jpg" alt="galletas pepas">
+                        <h3>Galletas pepas</h3>
+                        <p>
+                            Galletas artesanales con un centro de dulce de membrillo, perfectas para acompañar con una taza de té. <br><br>
+                            <b>$2.000 1/2kg</b>
+                        </p>
+                    </a>
+                    <a href="https://example.com" class="producto-card">
+                        <img src="imagenes/mafins.jpg" alt="cupcakes">
+                        <h3>Cupcakes de frutilla</h3>
+                        <p>
+                            Suaves cupcakes de vainilla rellenos de mermelada de frutilla, coronados con una generosa capa de crema. <br><br>
+                            <b>$700 c/u</b>
+                        </p>
+                    </a>
+                    <a href="https://example.com" class="producto-card">
+                        <img src="imagenes/roles.jpg" alt="Roles de canela">
+                        <h3>Roles de canela</h3>
+                        <p>
+                            Suaves y esponjosos roles de canela, cubiertos con un delicioso glaseado dulce. <br><br>
+                            <b>$1.200 c/u</b>
+                        </p>
+                    </a>
+                </div>
+                <div class="ver-mas-container"> 
+                    <a href="https://example.com" class="ver-mas-btn">Ver más</a> 
+                </div>
+            </section>
+            
+            <!-- Sección de contacto -->
+            <section id="contacto">
+                <h2><hr>Contacto<hr></h2>
+                <form action="https://formspree.io/f/mjkvrrro" method="POST">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Ingresa tu nombre" required>
+                    <br>
+                    <label for="email">Correo electrónico:</label>
+                    <input type="email" id="email" name="email" placeholder="Ingresa tu correo electrónico" required>
+                    <br>
+                    <label for="mensaje">Mensaje:</label>
+                    <textarea id="mensaje" name="mensaje" placeholder="Ingresa tu mensaje"></textarea>
+                    <br>
+                    <button type="submit">Enviar</button>
+                </form>
+            </section>
+        </main>
+        
+        <!-- Pie de página -->
+        <footer>
+            <p>&copy; 2024 Sweet like Cinnamon</p>
+        </footer>
+    </body>
+</html>
